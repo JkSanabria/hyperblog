@@ -1,58 +1,65 @@
-body
-{
+body {
     background: #1e1f24;
     color: #333;
-    text-align: center;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
 }
 
-#cabecera
-{
+#cabecera {
     background: #37488b;
-    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.5);
     color: white;
-    font-weight: bold;
-    margin: 0;
-    padding: 0.5em;
+    text-align: center;
+    padding: 1em 0;
 }
 
-#cabecera #logo
-{
-    width: 20px;
+#cabecera h1, #cabecera #tagline {
+    display: inline-block;
+    margin: 0;
+}
+
+#cabecera #logo {
+    width: 50px; /* Ajustar según el tamaño real de la imagen */
     vertical-align: middle;
 }
 
-#cabecera #tagline
-{
-    padding: 0 0 0 1em;
-    font-weight: normal;
+#cabecera #tagline {
     font-size: 0.8em;
+    font-weight: normal;
+    margin-left: 10px;
 }
 
-#container
-{
+#container {
     width: 70%;
-    padding: 0;
-    text-align: left;
-    border: 1px solid #DDD;
     margin: 0 auto;
-}
-
-#container h1
-{
-    font-size: 20px;
-}
-#post
-{
     background: white;
+    border: 1px solid #DDD;
     padding: 1em;
 }
 
-#footer
-{
+#post .texto-destacado {
+    border: 1px solid #EEE;
+    padding: 1em;
+    margin-bottom: 1em;
+    background: #f9f9f9;
+}
+
+#post .contribuyentes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 1em;
+}
+
+#post .contribuyentes p {
+    background: #e7e7e7;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#footer {
     background: #37488b;
     color: white;
     text-align: center;
